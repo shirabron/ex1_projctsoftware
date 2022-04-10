@@ -92,7 +92,7 @@ def assignVectorToCluster(vectors,centroids,clusters,vectorIndex):
     min = sys.float_info.max
     index = 0
     for i in range (len(centroids)):
-        distance = euclideanDistance(vectors[vectorIndex],clusters[i])
+        distance = euclideanDistance(vectors[vectorIndex],centroids[i])
         if distance<min:
             min = distance
             index = i
