@@ -32,7 +32,7 @@ def main(K,max_iter,input,output):
                 num_of_unchanged_centorids+=1
         if num_of_unchanged_centorids==K:
             break
-        return (writeToOutput(output,centroids))
+    return (writeToOutput(output,centroids))
 
     
             
@@ -58,8 +58,6 @@ def readInput(fileName):
 
     return vectors  
 
-
- 
 
 # creates lst in length k, initialize with first k vectors
 def intializeCentroids(vectors,k):
