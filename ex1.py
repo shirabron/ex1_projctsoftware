@@ -32,7 +32,7 @@ def main(K,max_iter,input,output):
                 num_of_unchanged_centorids+=1
         if num_of_unchanged_centorids==K:
             break
-        return (writeToOutput(output,centroids))
+    return (writeToOutput(output,centroids))
 
     
             
